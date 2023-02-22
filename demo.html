@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=13
+
+
+        // 同一套/一组if else条件判断语句只会执行其中一个情况
+        if(num>0){
+            console.log('num是一个正数')
+        }else if(num>10){
+            console.log('num不是一个个位数')
+        }else{
+            console.log('以上情况都不满足')
+        }
+
+        if(Math.abs(num)>0&&Math.abs(num)<10){
+            console.log('num是一个个位数')
+        }else{
+            console.log('num不是个位数')
+        }
+    </script>
+</body>
+</html>

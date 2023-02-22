@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./日历.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <button class="change">切换</button>
+        <div class="month-cal">
+            <div class="num-shown">
+                当前日历展示的年月为：
+                <span class="year-span">2008</span>
+                <span>-</span>
+                <span class="month-span">06</span>
+            </div>
+            <div class="btns">
+                <button type="button" class="pre-year-btn">《</button>
+                <button type="button" class="pre-month-btn month-btn">
+                    <</button>
+                        <button type="button" class="back-today-btn">O</button>
+                        <button type="button" class="next-month-btn month-btn">></button>
+                        <button type="button" class="next-year-btn">》</button>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="年" id="search-year">
+                <input type="text" placeholder="月" id="search-month">
+                <button type="button" id="search-btn">提交</button>
+            </div>
+
+            <ul class="cal-head-list">
+                <li class="cal-head-item">日</li>
+                <li class="cal-head-item">一</li>
+                <li class="cal-head-item">二</li>
+                <li class="cal-head-item">三</li>
+                <li class="cal-head-item">四</li>
+                <li class="cal-head-item">五</li>
+                <li class="cal-head-item">六</li>
+            </ul>
+            <ul class="cal-body-list">
+                <div class="space"></div>
+                <li class="cal-body-item">1</li>
+                <li class="cal-body-item">2</li>
+                <li class="cal-body-item">3</li>
+                <li class="cal-body-item">4</li>
+                <li class="cal-body-item">5</li>
+                <li class="cal-body-item">6</li>
+                <li class="cal-body-item">7</li>
+                <li class="cal-body-item">8</li>
+                <li class="cal-body-item">9</li>
+                <li class="cal-body-item">10</li>
+                <li class="cal-body-item">11</li>
+                <li class="cal-body-item">12</li>
+                <li class="cal-body-item">13</li>
+                <li class="cal-body-item">14</li>
+                <li class="cal-body-item">15</li>
+                <li class="cal-body-item">16</li>
+            </ul>
+        </div>
+        <div class="day-cal">
+            <div class="btns">
+                <button class="go-pre-day-btn"><</button>
+                <button class="back-today-btn">O</button>
+                <button class="add-thing-btn">+</button>
+                <button class="go-next-day-btn">></button>
+            </div>
+            <img src="./img/1.jpg" alt="">
+            <div class="down">
+                <div class="left">
+                    <p class="year-show">2020</p>
+                    <span class="month-show">08</span>
+                    <span class="date-show">08</span>
+                </div>
+                <div class="right">
+                    <p>
+                        时间：<span id="time-span">14:49</span>
+                    </p>
+                    <p>
+                        主题：<span id="theme-span">吃饭</span>
+                    </p>
+                    <p>
+                        内容：<span id="content-span">今天越好请广场王大妈吃饭，因为他说要给我介绍一个非常好相亲对象</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./日历.js"></script>
+    <script src="./日历Day.js"></script>
+</body>
+
+</html>
